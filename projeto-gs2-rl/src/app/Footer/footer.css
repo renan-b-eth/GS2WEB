@@ -1,18 +1,53 @@
-.rodape{
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #032D60;
+.App-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .App-footer-logo {
+    margin-bottom: 20px;
+  }
+  
+  .App-footer-links {
+    margin-bottom: 20px;
+  }
+  
+  .App-footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App-footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .App-footer-links a {
+    color: #fff;
+  }
+  
+  .App-footer-links a:hover {
+    color: #ccc;
+  }
+  
+  .App-footer-contact {
+    margin-bottom: 20px;
+  }
+  
+  .App-footer-contact p {
+    margin-bottom: 10px;
+  }
+  
+  .App-footer-contact a {
+    color: #fff;
+  }
+  
+  .App-footer-contact a:hover {
+    color: #ccc;
+  }
+  
+  .App-copyright {
     font-size: 12px;
-    line-height: 1px;
-}
-
-.rodape2{
-    display: flex;
-    justify-content: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #032D60;
-    font-size: 12px;
-    line-height: 1px;
-}
+    color: #666;
+  }

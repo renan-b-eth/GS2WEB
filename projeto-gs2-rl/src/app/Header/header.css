@@ -1,7 +1,31 @@
-.content{
-    background-color: red;
-}
-.posicao-home{
-    position: relative;
-    top: -3px;
-}
+.App-header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .App-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .App-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .App-header nav li {
+    margin-right: 20px;
+  }
+  
+  .App-header nav a {
+    color: #fff;
+  }
+  
+  .App-header nav a:hover {
+    color: #ccc;
+  }

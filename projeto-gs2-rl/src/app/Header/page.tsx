@@ -1,25 +1,24 @@
 import React from 'react';
-import Image from "next/image";
-import './header.css';
+import './header.css'
 
-const Header = () =>{
-    return(
-        <>
-        <div className="content">
-        <header>
-        
-        <nav>
-            <ul className="menor">
-                <li><a href="/Empresa">1</a></li>
-                <li><a href="/Acessibilidade">2</a></li>
-                <li><a href="/Integrantes">3</a></li>
-                <li><a href="/Login">4</a></li>
-                <li><a href="/Cadastro">5</a></li>
-            </ul>
-        </nav>
+const Header = () => {
+  return (
+    <header className="App-header">
+      <nav className="App-nav">
+        <div className="App-logo">
+          <h1>LOGO AQUI</h1>
+        </div>
+        <ul className="App-menu">
+          <li>Inicio</li>
+          <li>Quem Somos</li>
+          <li>O que Fazemos</li>
+          <li>Proposta</li>
+          <li>Contato</li>
+          <li>Cadastro</li>
+        </ul>
+      </nav>
     </header>
-                </div>
-        </>
-    )
-}
+  );
+};
+
 export default Header;
