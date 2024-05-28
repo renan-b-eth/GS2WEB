@@ -20,11 +20,12 @@ export default function Home() {
       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300..700&display=swap');
     </style>
     <main className="App-main">
-      <section className="App-hero">
-        <h2 className="color-fonte">Navegue pela Vida Marinha: Descubra <span className="cor-azul">Áreas Marinhas</span> Protegidas em um Mapa Interativo</h2>
-        <p className="fonte">O projeto consiste no desenvolvimento de um mapa interativo de áreas marinhas protegidas. A iniciativa visa criar uma ferramenta online que forneça informações sobre as áreas ao redor do mundo dedicadas à conservação marinha. O mapa destacará informações essenciais sobre cada área, como nome, localização e tipo de proteção. O objetivo principal é aumentar a conscientização sobre a importância da conservação marinha e incentivar a preservação dos ecossistemas oceânicos.</p>
-        <button>BOTAO</button>
-      </section>
+      <div className="background">
+        <section className="App-hero">
+          <h2 className="color-fonte position2">Navegue pela Vida Marinha: Descubra <span className="cor-azul">Áreas Marinhas</span> Protegidas em um Mapa Interativo</h2>
+          <p className="fonte position">O projeto consiste no desenvolvimento de um mapa interativo de áreas marinhas protegidas. A iniciativa visa criar uma ferramenta online que forneça informações sobre as áreas ao redor do mundo dedicadas à conservação marinha. O mapa destacará informações essenciais sobre cada área, como nome, localização e tipo de proteção. O objetivo principal é aumentar a conscientização sobre a importância da conservação marinha e incentivar a preservação dos ecossistemas oceânicos.</p>
+        </section>
+      </div>
       <section className="App-products">
         <h2>Quem Somos</h2>
         <p>Texto</p>
