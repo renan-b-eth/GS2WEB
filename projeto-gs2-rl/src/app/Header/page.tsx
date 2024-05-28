@@ -9,12 +9,12 @@ const Header = () => {
           <h1>LOGO AQUI</h1>
         </div>
         <ul className="App-menu">
-          <li>Inicio</li>
-          <li>Quem Somos</li>
-          <li>O que Fazemos</li>
-          <li>Proposta</li>
-          <li>Contato</li>
-          <li>Cadastro</li>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/">Quem Somos</a></li>
+          <li><a href="/">O que Fazemos</a></li>
+          <li><a href="/">Proposta</a></li>
+          <li><a href="/">Contato</a></li>
+          <li><a href="/">Cadastro</a></li>
         </ul>
       </nav>
     </header>

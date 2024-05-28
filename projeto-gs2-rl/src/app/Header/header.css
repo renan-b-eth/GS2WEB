@@ -22,9 +22,18 @@
   }
   
   .App-header nav a {
-    color: #fff;
+    color: #333;
   }
   
   .App-header nav a:hover {
-    color: #ccc;
+    color: #1081f9;
+    transition: 1s;
+    font-size: 20px;
+  }
+
+  .App-menu{
+    color: #333;
+  }
+  a {
+    text-decoration: none;
   }

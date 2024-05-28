@@ -44,6 +44,8 @@ const Footer = () => {
         </div>
       </div>
       <p className="App-copyright">&copy; 2024 Nome Marca. Todos direitos reservados.</p>
+      <p className="">RENAN BEZERRA DOS SANTOS - RM: 553228 - 1TDSPB</p>
+      <p className="">LUCAS ALCANTARA CARVALHO - RM: XXXX - 1TDSPB</p>
     </footer>
   );
 };
