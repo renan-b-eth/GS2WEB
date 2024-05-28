@@ -1,5 +1,8 @@
 import React from 'react';
+import Image from "next/image";
 import './footer.css'
+import Google from "../img/play.png"
+import Apple from "../img/apple.png"
 
 const Footer = () => {
   return (
@@ -33,10 +36,10 @@ const Footer = () => {
         <p>Baixe nosso App</p>
         <div className="App-app-store">
           <a href="#">
-            <img src="https://i.ibb.co/s68C2gV/app-store.png" alt="App Store" />
+            <Image src={Apple} alt="Apple" className="tamanho" />
           </a>
           <a href="#">
-            <img src="https://i.ibb.co/hV5x3rG/google-play.png" alt="Google Play" />
+            <Image src={Google} alt="Google" className="tamanho" />
           </a>
         </div>
       </div>

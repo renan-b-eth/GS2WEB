@@ -4,6 +4,10 @@
     padding: 2rem;
     text-align: center;
   }
+  .tamanho{
+    height: 10%;
+    width: 20%;
+  }
   
   .App-footer-logo {
     margin-bottom: 20px;
