@@ -1,12 +1,14 @@
 import React from 'react';
 import './header.css'
+import Image from "next/image";
+import Logo from "../img/Logo.png"
 
 const Header = () => {
   return (
     <header className="App-header">
       <nav className="App-nav">
         <div className="App-logo">
-          <h1>LOGO AQUI</h1>
+          <Image src={Logo} alt="Logo"/>
         </div>
         <ul className="App-menu">
           <li><a href="/">Inicio</a></li>
@@ -14,7 +16,8 @@ const Header = () => {
           <li><a href="/">O que Fazemos</a></li>
           <li><a href="/">Proposta</a></li>
           <li><a href="/">Contato</a></li>
-          <li><a href="/">Cadastro</a></li>
+          <li><a href="/Cadastro">Cadastro</a></li>
+          <li><a href="/Login">Login</a></li>
         </ul>
       </nav>
     </header>
