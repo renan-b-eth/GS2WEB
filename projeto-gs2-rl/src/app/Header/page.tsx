@@ -18,6 +18,8 @@ const Header = () => {
           <li><a href="/">Contato</a></li>
           <li><a href="/Cadastro">Cadastro</a></li>
           <li><a href="/Login">Login</a></li>
+          <li><a href="/ApiAdmin">API JAVA ADMIN</a></li>
+          <li><a href="/ApiUsuario">API JAVA USUARIO</a></li>
         </ul>
       </nav>
     </header>

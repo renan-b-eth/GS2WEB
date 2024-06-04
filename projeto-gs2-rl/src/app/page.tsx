@@ -10,10 +10,12 @@ import Imagem5 from "../app/img/oceano5.jpg"
 import Imagem6 from "../app/img/oceano6.jpg"
 import Imagem7 from "../app/img/oceano7.jpg"
 import Imagem8 from "../app/img/oceano8.jpg"
+import Admin from "./Admin/page";
 
 export default function Home() {
   return (
     <>
+    
     <Header></Header>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
