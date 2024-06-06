@@ -3,12 +3,13 @@ import Image from "next/image";
 import './footer.css'
 import Google from "../img/play.png"
 import Apple from "../img/apple.png"
+import Logo from "../img/Logo.png"
 
 const Footer = () => {
   return (
     <footer className="App-footer">
       <div className="App-footer-logo">
-        <h1>Logo</h1>
+        <Image src={Logo} alt="Logo" className="tamanho" />
         <p>Texto para colocar</p>
         <h3>Siga-nos</h3>
         <ul className="App-social-media">
