@@ -1,3 +1,4 @@
+"use client"
 import Footer from "./Footer/page";
 import Header from "./Header/page"
 import Image from "next/image";
@@ -11,12 +12,24 @@ import Imagem6 from "../app/img/oceano6.jpg"
 import Imagem7 from "../app/img/oceano7.jpg"
 import Imagem8 from "../app/img/oceano8.jpg"
 import Admin from "./Admin/page";
+import React, { useState, useEffect } from 'react';
 
 export default function Home() {
+
+  const [userTitle, setUserTitle] = useState(''); 
+
+  useEffect(() => {
+    
+    const storedTitle = localStorage.getItem('nome'); 
+    if (storedTitle) {
+      setUserTitle(storedTitle);
+    }
+  }, []);
+
   return (
     <>
-    
     <Header></Header>
+    <h1>Bem-Vindo, {userTitle}</h1>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300..700&display=swap');

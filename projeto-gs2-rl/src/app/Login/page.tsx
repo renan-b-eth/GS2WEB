@@ -6,6 +6,7 @@ import Header from '../Header/page';
 import Footer from '../Footer/page'; 
 import { Admin } from '../../../Admin'; 
 import axios from 'axios';
+import { useRouter } from 'next/router';
 
 
 const Login = () => {
@@ -60,8 +61,11 @@ const Login = () => {
       }
 
       setLoginSuccessful(true);
+      window.location.href = 'http://localhost:3000/'; // aqui volta para a tela inicial de login
+      localStorage.setItem('nome', foundAdmin.sobrenome);
     } catch (error) {
       console.error('Error during login:', error);
+      alert(error)
       setErrorMessage('An error occurred. Please try again later.');
     }
   };
