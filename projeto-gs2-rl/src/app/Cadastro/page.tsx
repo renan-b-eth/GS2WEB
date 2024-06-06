@@ -5,10 +5,10 @@ import Image from "next/image";
 import './cadastro.css'
 import Header from '../Header/page';
 import Footer from '../Footer/page';
-import axios from 'axios';
+import axios from 'axios'; // npm install axios instalar
 import { useEffect, useState } from "react";
 import { Admin } from '../../../Admin';
-
+import { Link } from 'react-router-dom'; // Importar Link
 
 
   const Cadastro: React.FC = () => {
@@ -18,10 +18,9 @@ import { Admin } from '../../../Admin';
       sobrenome: '',
       sexo: '',
       cargo: '',
+      email: '',
       senha: '',
       senha2: '',
-      id_endereco: '',
-      id_telefone: '',
     });
   
     const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -36,13 +35,23 @@ import { Admin } from '../../../Admin';
       event.preventDefault();
   
       try {
-        const response = await axios.post('/admin/inserirRs', formData);
+        const response = await axios.post('http://localhost:8080/ProjetoGS2-JAVA/rest/admin', formData);
         console.log('Cadastro realizado com sucesso:', response.data);
-        // colocar aqui o login na pagina inicial com nome
-        alert("CADASTRADO COM SUCESSO")
+              // colocar aqui o login na pagina inicial com nome
+              if(formData.senha == formData.senha2){
+
+                alert("ADMIN CADASTRADO COM SUCESSO, TE DIRECIONANDO PARA A PAGINA DE LOGIN");
+                <Link to="/Login"></Link>
+              }
+
+              if(formData.senha != formData.senha2){
+                alert("SENHA ERRADA DIGITE CORRETAMENTE AMBAS IGUAIS")
+              }
+        
+      
       } catch (error) {
         console.error('Falha no cadastro:', error);
-        alert("DEU ERRO")
+        alert("ID REPITIDO TROQUE-O")
         alert(error)
         alert(formData.id + "\n" + formData.nome + "\n" + formData.sobrenome + "\n" + formData.sexo + "\n" + formData.cargo + "\n" + formData.senha + "\n" + formData.senha2 + "\n" + formData.id_endereco +  "\n" + formData.id_telefone)
         
@@ -80,6 +89,10 @@ import { Admin } from '../../../Admin';
         <input type="text" name="cargo" value={formData.cargo} onChange={handleChange} />
       </label>
       <label>
+        Email:
+        <input type="text" name="email" value={formData.email} onChange={handleChange}/>
+      </label>
+      <label>
         Senha:
         <input type="password" name="senha" value={formData.senha} onChange={handleChange}/>
       </label>
@@ -88,14 +101,6 @@ import { Admin } from '../../../Admin';
         <input type="password" name="senha2" value={formData.senha2} onChange={handleChange} />
       </label>
       <br />
-      <label>
-        ID Endereco:
-        <input type="text" name="id_endereco" value={formData.id_endereco} onChange={handleChange} />
-      </label>
-      <label>
-        ID Telefone:
-        <input type="text" name="id_telefone" value={formData.id_telefone} onChange={handleChange} />
-      </label>
       <br />
       <input type="submit" value="Enviar" /><br></br>
     </form>

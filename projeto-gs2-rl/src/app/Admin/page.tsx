@@ -2,11 +2,12 @@
 import React, { useState, useEffect } from 'react';
 
 interface Admin {
-  id_endereco: number;
-  id_telefone: number;
+  id: number;
   nome: string;
   sobrenome: string;
   cargo: string;
+  email: string;
+  sexo: string;
 }
 
 const Admin: React.FC = () => {
@@ -30,12 +31,14 @@ const Admin: React.FC = () => {
     <section id="lista-de-admins">
       {admins.map((admin) => (
 
-        <article key={admin.nome}>
+        <article key={admin.id}>
         <h1>LISTA DE ADMINS CADASTRADO NO BANCO VIA API JAVAWEB</h1>
           <header>Admin: {admin.nome}</header>
-          <p>Nome: {admin.nome}</p>
-          <p>Sobrenome: {admin.sobrenome}</p>
-          <p>Cargo: {admin.cargo}</p>
+          <p>ID: {admin.nome}</p>
+          <p>Nome: {admin.sobrenome}</p>
+          <p>Sobrenome: {admin.sexo}</p>
+          <p>Sexo: {admin.cargo}</p>
+          <p>Cargo: {admin.email}</p>
           <br></br>
         </article>
       ))}
