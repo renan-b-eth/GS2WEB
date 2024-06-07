@@ -33,7 +33,7 @@
   font-optical-sizing: auto;
   font-weight: 10px;
   font-style: normal;
-  color: white;
+  color: #333;
 }
 .position{
   position: relative;
@@ -91,18 +91,23 @@
   margin-top: 20px;
   position: relative;
   top: -100px;
-  left: 200px;
+  left: -250px;
 }
 .posicao {
   position: relative;
-  left: 600px;
+  left: 620px;
+  top: -200px;
 }
 .App-products-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.textos{
+  width: 550px;
+  height: 100px;
+  text-align: justify;
+}
 .App-product {
   margin: 20px;
   width: 200px;
@@ -198,7 +203,7 @@
 }
 
 .descricao{
-  color: #032D60;
+  color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 0;
 
