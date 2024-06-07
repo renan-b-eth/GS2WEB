@@ -18,8 +18,8 @@
 .background{
   background-image: url('../app/img/pag_inicial.png');
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 110%;
+  height: 110vh;
+  width: 106%;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -94,7 +94,7 @@
 }
 
 .App-products {
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
   top: -100px;
   left: -250px;

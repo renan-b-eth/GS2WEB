@@ -44,32 +44,30 @@ export default function Home() {
     <main className="App-main">
       <div className="background">
       </div>
-      <section className="App-products" id="blue_map">
-        <h2>BLUE MAP</h2>
-        <div className="textos">
-        <p>Bem-vindo ao Mapa Interativo de Áreas Marinhas e Costeiras Protegidas! Este projeto inovador surgiu de uma parceria entre acadêmicos dedicados e a Softtek com a missão de tornar mais acessíveis e compreensíveis as informações</p>
-           sobre nossas áreas marinhas protegidas.
-        
-        </div>
-        
-        <div>
-      
-    </div>
-    <div className="App-product posicao">
-    <p>PROTOTIPO</p>
-    <Youtube></Youtube>
-    </div>
-          
-      </section>
-      <section className="App-mosques">
-        <h2>O que fazemos</h2>
-        <Image src={Imagem4} alt="Google" className="" />
-        <button>BOTAO</button>
-      </section>
-      <section className="App-business" id="">
-        
-        
-      </section>
+        <section className="App-products" id="blue_map">
+          <h2>BLUE MAP</h2>
+          <div className="textos">
+            <p>Bem-vindo ao Mapa Interativo de Áreas Marinhas e Costeiras Protegidas! 
+              Este projeto inovador surgiu de uma parceria entre acadêmicos dedicados, a FIAP e a Softtek
+              com a missão de tornar mais acessíveis e compreensíveis as informações sobre nossas áreas marinhas protegidas.
+            </p>
+            <h4>MAPA INTERATIVO</h4>
+            <p>Este mapa interativo permite explorar detalhes importantes das áreas marinhas e costeiras protegidas, fornecendo informações 
+            detalhadas como nome da unidade de conservação, cadastro nacional, ano de criação, esfera administrativa e muito mais.</p>
+          </div>
+          <div className="App-product posicao">
+            <Youtube></Youtube>
+          </div>
+        </section>
+        <section className="App-mosques">
+          <h2>POR QUE USAR O BLUE MAP?</h2>
+          <ul>
+            <li>Precisão e Atualização: Dados confiáveis e atualizados sobre áreas protegidas.</li>
+            <li>Facilidade de Uso: Interface intuitiva para uma experiência de usuário amigável.</li>
+            <li>Educação Ambiental: Ferramenta educativa para estudantes, pesquisadores e ambientalistas.</li>
+            <li>reservação dos Ecossistemas: Contribuição para a preservação dos nossos mares e costas.</li>
+          </ul>
+        </section>
     </main>
     <Footer></Footer>
     </>
