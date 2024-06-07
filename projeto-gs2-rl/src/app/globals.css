@@ -1,3 +1,6 @@
+*{
+  font-family: "Bai Jamjuree", sans-serif;
+}
 
 .App-main {
   display: flex;
@@ -7,9 +10,9 @@
   
 }
 .background{
-  background-image: url('../app/img/oceano3.jpg');
+  background-image: url('../app/img/pag_inicial.png');
   background-repeat: no-repeat;
-  height: 700px;
+  height: 117vh;
   width: 112%;
   background-size: cover;
   background-position: center;
@@ -17,6 +20,7 @@
   bottom: 140px;
   right: 40px;
   z-index: -1;
+  top: -170px;
 }
 
 .position2{
@@ -30,7 +34,7 @@
   color: #1081f9;
 }
 .fonte{
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
   font-optical-sizing: auto;
   font-weight: 10px;
   font-style: normal;
@@ -64,7 +68,7 @@
 
 .color-fonte{
   color: #444;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -90,8 +94,14 @@
 
 .App-products {
   margin-top: 20px;
+  position: relative;
+  top: -100px;
+  left: -300px;
 }
-
+.posicao {
+  position: relative;
+  left: 600px;
+}
 .App-products-grid {
   display: flex;
   flex-wrap: wrap;
@@ -105,6 +115,8 @@
   border: 1px solid #ddd;
   padding: 20px;
   text-align: center;
+  position: relative;
+  right: -200px;
 }
 
 .App-product img {

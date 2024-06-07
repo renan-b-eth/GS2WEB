@@ -22,67 +22,40 @@ export default function Home() {
     
     const storedTitle = localStorage.getItem('nome'); 
     if (storedTitle) {
-      setUserTitle(storedTitle);
+      setUserTitle("Bem-vindo, "+storedTitle);
     }
   }, []);
 
   return (
     <>
     <Header></Header>
-    <h1>Bem-Vindo, {userTitle}</h1>
+    <h1>{userTitle}</h1>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300..700&display=swap');
     </style>
     <main className="App-main">
       <div className="background">
-        <section className="App-hero">
-          <h2 className="color-fonte position2">Navegue pela Vida Marinha: Descubra <span className="cor-azul">Áreas Marinhas</span> Protegidas em um Mapa Interativo</h2>
-          <p className="fonte position">O projeto consiste no desenvolvimento de um mapa interativo de áreas marinhas protegidas. A iniciativa visa criar uma ferramenta online que forneça informações sobre as áreas ao redor do mundo dedicadas à conservação marinha. O mapa destacará informações essenciais sobre cada área, como nome, localização e tipo de proteção. O objetivo principal é aumentar a conscientização sobre a importância da conservação marinha e incentivar a preservação dos ecossistemas oceânicos.</p>
-        </section>
       </div>
-      <section className="App-products">
-        <h2>Quem Somos</h2>
-        <p>Texto</p>
-        <div className="App-products-grid">
-          <div className="App-product">
-            <Image src={Imagem1} alt="Google" className="tamanho" />
-            <h3>Titulo</h3>
-            <p>texto</p>
-            <button>SABER MAIS</button>
-          </div>
-          <div className="App-product">
-            <Image src={Imagem2} alt="Google" className="tamanho" />
-            <h3>Titulo</h3>
-            <p>texto</p>
-            <button>SABER MAIS</button>
-          </div>
-          <div className="App-product">
+      <section className="App-products" id="blue_map">
+        <h2>BLUE MAP</h2>
+        <p></p>
+          <div className="App-product posicao">
             <Image src={Imagem3} alt="Google" className="tamanho" />
             <h3>Titulo</h3>
             <p>Texto</p>
             <button>SABER MAIS</button>
           </div>
-        </div>
       </section>
       <section className="App-mosques">
         <h2>O que fazemos</h2>
         <Image src={Imagem4} alt="Google" className="" />
         <button>BOTAO</button>
       </section>
-      <section className="App-mosques">
-        <h2>Proposta</h2>
-        <Image src={Imagem4} alt="Google" className="" />
-        <button>BOTAO</button>
-      </section>
-      <section className="App-business">
-        <h2>Contato</h2>
+      <section className="App-business" id="equipe">
+        <h2>EQUIPE</h2>
         <p>Formulario aqui</p>
-        <p>Formulario aqui</p>
-        <p>Formulario aqui</p>
-      </section>
-      <section className="App-gallery">
-      <Image src={Imagem8} alt="Google" className="" />
       </section>
     </main>
     <Footer></Footer>

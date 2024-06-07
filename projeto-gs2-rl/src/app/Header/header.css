@@ -1,3 +1,7 @@
+*{
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
 .App-header {
     color: #333;
     padding: 1rem;
@@ -22,7 +26,7 @@
   }
   
   .App-header nav a {
-    color: #333;
+    color: white;
   }
   
   .App-header nav a:hover {
