@@ -153,11 +153,18 @@
   background-color: #23527c;
 }
 
-.App-mosques {
-  margin-top: 20px;
+.App-mosques h2{
   text-align: center;
   position: relative;
+}
+
+.App-mosques {
+  text-align: justify;
+  position: relative;
   top: -230px;
+  left: 100px;
+  width: 800px;
+  margin-bottom: -200px;
 }
 
 .App-mosques img {

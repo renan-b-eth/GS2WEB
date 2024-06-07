@@ -60,13 +60,14 @@ export default function Home() {
           </div>
         </section>
         <section className="App-mosques">
-          <h2>POR QUE USAR O BLUE MAP?</h2>
-          <ul>
-            <li>Precisão e Atualização: Dados confiáveis e atualizados sobre áreas protegidas.</li>
-            <li>Facilidade de Uso: Interface intuitiva para uma experiência de usuário amigável.</li>
-            <li>Educação Ambiental: Ferramenta educativa para estudantes, pesquisadores e ambientalistas.</li>
-            <li>reservação dos Ecossistemas: Contribuição para a preservação dos nossos mares e costas.</li>
-          </ul>
+          <h2 className="h2">POR QUE USAR O BLUE MAP?</h2>
+          <p>Atualmente, encontrar informações centralizadas e detalhadas sobre áreas marinhas e costeiras protegidas é uma tarefa desafiadora. 
+            Pesquisadores, ambientalistas e até o público em geral enfrentam dificuldades para acessar dados precisos e atualizados.
+            <br></br>
+            <br></br>
+            O nosso mapa interativo resolve esse problema de forma prática e eficiente. Ao clicar em uma área específica, você tem acesso a informações 
+            como o nome da unidade de conservação, o cadastro nacional, o ano de criação, a esfera administrativa, biomas, e muito mais. 
+            Isso não apenas facilita a pesquisa e o planejamento ambiental, mas também aumenta a conscientização e o engajamento do público com a conservação marinha.</p>
         </section>
     </main>
     <Footer></Footer>
