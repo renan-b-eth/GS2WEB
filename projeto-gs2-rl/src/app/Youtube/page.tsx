@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import YouTube from 'react-youtube'; // Corrected import statement
 
