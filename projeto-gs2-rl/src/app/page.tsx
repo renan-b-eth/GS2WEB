@@ -42,7 +42,10 @@ export default function Home() {
       </div>
       <section className="App-products" id="blue_map">
         <h2>BLUE MAP</h2>
-        <p></p>
+        <p>Bem-vindo ao Mapa Interativo de Áreas Marinhas e Costeiras Protegidas!
+          <br></br>Este projeto inovador surgiu de uma parceria entre acadêmicos dedicados e a Softtek,
+          com a missão de tornar mais acessíveis e compreensíveis as informações sobre nossas áreas marinhas protegidas.
+        </p>
           <div className="App-product posicao">
             <Image src={Imagem3} alt="Google" className="tamanho" />
             <h3>Titulo</h3>
