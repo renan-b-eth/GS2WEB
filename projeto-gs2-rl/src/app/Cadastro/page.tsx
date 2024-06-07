@@ -53,7 +53,7 @@ import { Link } from 'react-router-dom'; // Importar Link
         console.error('Falha no cadastro:', error);
         alert("ID REPITIDO TROQUE-O")
         alert(error)
-        alert(formData.id + "\n" + formData.nome + "\n" + formData.sobrenome + "\n" + formData.sexo + "\n" + formData.cargo + "\n" + formData.senha + "\n" + formData.senha2 + "\n" + formData.id_endereco +  "\n" + formData.id_telefone)
+        alert(formData.id + "\n" + formData.nome + "\n" + formData.sobrenome + "\n" + formData.sexo + "\n" + formData.cargo + "\n" + formData.senha + "\n" + formData.senha2)
         
         // erro mensagem
       }
