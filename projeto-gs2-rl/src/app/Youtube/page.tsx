@@ -11,8 +11,7 @@ const Youtube: React.FC = () => {
 
   return (
     <div>
-      <input type="text" value={videoId} onChange={handleVideoChange} placeholder="DIGITE VIDEO PARA ATIVAR O VIDEO" />
-      {videoId && (
+
         <YouTube
           videoId={"Ic7ATRffvyQ"}
           opts={{
@@ -23,7 +22,7 @@ const Youtube: React.FC = () => {
             },
           }}
         />
-      )}
+      
     </div>
   );
 };
