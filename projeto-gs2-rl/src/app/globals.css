@@ -152,6 +152,8 @@
 .App-mosques {
   margin-top: 20px;
   text-align: center;
+  position: relative;
+  top: -230px;
 }
 
 .App-mosques img {
@@ -184,4 +186,36 @@
 
 .App-business {
   margin-top: 20px;
+}
+
+.card-integrantes{
+  width: 250px;
+  height: 250px;
+  margin-left: 50px;
+  display: inline-block;
+}
+
+.content-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.descricao{
+  color: #032D60;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 0;
+
+}
+
+.efeito2{
+  transition: all .5s;
+  border: 5px solid transparent;
+}
+
+.efeito2:hover{
+  border: 5px solid #032D60;
+  border-radius: 50%;
+  cursor: pointer;
 }

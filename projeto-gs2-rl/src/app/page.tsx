@@ -9,6 +9,8 @@ import Imagem3 from "../app/img/oceano3.jpg"
 import Imagem4 from "../app/img/oceano4.jpg"
 import Imagem5 from "../app/img/oceano5.jpg"
 import Imagem6 from "../app/img/oceano6.jpg"
+import Renan from "../app/img/fotorenan.png"
+import Lucas from "../app/img/fotolucas2.png"
 import Imagem7 from "../app/img/oceano7.jpg"
 import Imagem8 from "../app/img/oceano8.jpg"
 import Admin from "./Admin/page";
@@ -55,7 +57,12 @@ export default function Home() {
       </section>
       <section className="App-business" id="equipe">
         <h2>EQUIPE</h2>
-        <p>Formulario aqui</p>
+        <div className="content-card">
+                    <div className="card-integrantes"><Image src={Renan} alt="Landscape picture" width={250} height={250} className='card efeito2'/></div>
+                    <div className="descricao"><p>Renan Bezerra dos Santos</p><p>RM - 553228</p></div>
+                    <div className="card-integrantes"><Image src={Lucas} alt="Landscape picture" width={250} height={250} className='card efeito2'/></div>
+                    <div className="descricao"><p>Lucas Alcântara Carvalho</p><p>RM - 95111</p></div>
+        </div>
       </section>
     </main>
     <Footer></Footer>
